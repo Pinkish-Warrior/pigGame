@@ -7,7 +7,7 @@ Everytime that the die is rolled a random number will appear, and the number wil
 
 ![image](initial_status.png)
 
-Which ever player reaches out 💯 points first, wins the game 🏆 and its background color is changed to night rider style.
+Whichever player reaches out 💯 points first, wins the game 🏆 and its background color is changed to night rider style.
 
 ## 👉 A new game can be initialized by pressing the NEW GAME 🔄 button.
 
