@@ -12,6 +12,7 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const winningScore = 100;
 
 let scores, currentScore, activePlayer, playing;
 
@@ -87,9 +88,9 @@ btnHold.addEventListener('click', function (e) {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    // 2. Check if Player's score is >= 100
+    // 2. Check if Player's score is >= winningScore
     // Fisnish game
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= winningScore) {
       playing = false;
       diceEl.classList.add('hidden');
       document
