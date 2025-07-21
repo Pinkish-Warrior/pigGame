@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+:root {
+  --primary-color: #c7365f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +63,7 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: var(--primary-color);
   margin-bottom: auto;
 }
 
@@ -78,7 +82,7 @@ main {
 }
 
 .current {
-  background-color: #c7365f;
+  background-color: var(--primary-color);
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
@@ -145,7 +149,8 @@ main {
 }
 
 .btn:focus {
-  outline: none;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 .dice {
@@ -164,7 +169,7 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: var(--primary-color);
 }
 
 .hidden {
